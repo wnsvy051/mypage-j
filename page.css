@@ -1,0 +1,373 @@
+* {
+    margin: 0;
+    color: #444444;
+}
+
+.container { /* 기본 틀(컨테이너) */
+    background-color: #444444;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.mainLeft{ /* 왼쪽 구역 */
+    background-color: #444444;
+    width: 50%;
+    padding: 30px;
+}
+
+.profileBox{ /* 프로필 사진 */
+    display: flex;
+    background-color: #D9D9D9;
+    border-radius: 18px;
+    width: 170px;
+    height: 170px;
+    box-shadow: 0px 0px 9px #D9D9D9;
+}
+
+.profileImg, .profileImg2{
+    position: absolute;
+    width: 170px;
+    height: 170px;
+    transition: 0.3s;
+}
+/* 요소의 불투명도를 이용해 호버 시 이미지 바꾸기 */
+.profileImg{
+    opacity: 1;
+}
+.profileImg2{
+    opacity: 0;
+}
+.profileBox:hover .profileImg{
+    opacity: 0;
+}
+.profileBox:hover .profileImg2{
+    opacity: 1;
+}
+
+.infoBox{ /* 정보 박스 */
+    display: flex;
+    padding: 40px 0 40px 0;
+    gap: 50px;
+}
+
+.infoBoxLeft{ /* 이름 박스 */
+    background-color: #D9D9D9;
+    border-radius: 18px;
+    width: 340px;
+    height: 450px;
+    box-shadow: 0px 0px 9px #D9D9D9;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.info{ /* 각 정보들 박스 */
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 30px 0 5px 0;
+}
+.img{
+    width: 45px;
+    height: 45px;
+}
+.line {
+    border-bottom: 3px solid #222;
+    margin: 16px 0;
+}
+/* 각 글자 크기 등 조정 */
+.name{
+    color: #444444;
+    font-size: 50px;
+    font-weight: bold;
+    margin: 20px 0 0 0;
+}
+.number{
+    color: #444444;
+    font-size: 35px;
+    font-weight: bold;
+}
+.email{
+    color: #444444;
+    font-size: 25px;
+    font-weight: bold;
+}
+.address{
+    color: #444444;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.infoBoxRight{ /* 학교 정보 박스 */
+    background-color: #D9D9D9;
+    border-radius: 18px;
+    width: 400px;
+    height: 450px;
+    box-shadow: 0px 0px 9px #D9D9D9;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+/* 로고 가져다 대면 링크 이동 설정 */
+.univLogo{
+    width: 12vh;
+    height: 12vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.univLogoButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 11vh;
+    height: 12vh;
+    border-radius: 50%;
+}
+
+.DSU img{
+    width: 10vh;
+    height: 10vh;
+}
+.univLogo:hover{
+    background-color: #D9D9D9;
+    box-shadow: 0px 0px 6px 3px #00000027;
+}
+/* 각 글자 크기 등 조정 */
+.univName{
+    color: #444444;
+    font-size: 40px;
+    font-weight: bold;
+}
+.univName2{
+    color: #444444;
+    font-size: 40px;
+    font-weight: bold;
+}
+.univNum{
+    color: #444444;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.infoBoxBottom{ /* sns주소 박스 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #D9D9D9;
+    box-shadow: 0px 0px 9px #D9D9D9;
+    border-radius: 18px;
+    width: 910px;
+    height: 125px;
+}
+
+.buttonBox{ /* 버튼 박스 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10vh;
+    height: 10vh;
+    border-radius: 50%;
+    gap: 45px;
+}
+
+.socialButton{ /* 각 버튼들 같은 클래스 적용 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    width: 9vh;
+    height: 9vh;
+    border-radius: 50%;
+    background-color: #D9D9D9;
+    transition: 0.3s;
+}
+
+.socialButton:hover{ /* 호버하면 그림자 생성 */
+    background-color: #D9D9D9;
+    box-shadow: 0px 0px 6px 3px #00000027;
+}
+/* 버튼 이미지 크기 조정 */
+.instagram img{
+    width: 9vh;
+    height: 9vh;
+}
+.github img{
+    width: 7vh;
+    height: 7vh;
+}
+.facebook img{
+    width: 8vh;
+    height: 8vh;
+}
+.youtube img{
+    width: 7vh;
+    height: 7vh;
+}
+/* 오른쪽 구역 */
+.mainRight{
+    width: 50%;
+    padding: 30px;
+}
+
+.infoBox2{
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+}
+/* 공부 중인 과목 박스 */
+.subjectBox{
+    display: flex;
+    background-color: #D9D9D9;
+    box-shadow: 0px 0px 9px #D9D9D9;
+    border-radius: 18px;
+    width: 810px;
+    height: 390px;
+    padding: 30px;
+    flex-direction: column;
+}
+/* 글자 배치 및 크기 조정 */
+.info2{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 0 0 5px 0;    
+}
+.title{
+    color: #444444;
+    font-size: 50px;
+    font-weight: bold;
+    /* margin: 10px 0 0 0; */
+}
+.cLang{
+    color: #444444;
+    font-size: 40px;
+    font-weight: bold;
+}
+/* 과목 리스트 박스 */
+.subjectList{
+    display: flex;
+    gap: 90px;
+}
+.subjectLeft{
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 30px;
+}
+.subjectMiddle{
+    display: flex;
+    flex-direction: column;
+}
+.subjectRight{
+    display: flex;
+    flex-direction: column;
+}
+/* 좋아하는 것, 해보고 싶은 것 박스 */
+.hobbyBox{
+    display: flex;
+    background-color: #D9D9D9;
+    box-shadow: 0px 0px 9px #D9D9D9;
+    border-radius: 18px;
+    width: 810px;
+    height: 330px;
+    padding: 30px;
+    flex-direction: column;
+}
+
+.hobbyTitle{
+    display: flex;
+    gap: 270px;
+    margin: 0 0 20px 0;
+}
+.like{
+    color: #444444;
+    font-size: 40px;
+    font-weight: bold;
+}
+.like2{
+    color: #444444;
+    font-size: 40px;
+    font-weight: bold;
+}
+/* 사진 넣을 컨텐츠 박스와 마우스 호버 시 이미지 변경 */
+.hobbyContent{
+    display: flex;
+    gap: 50px;
+}
+.hobbyContent img{
+    height: 240px;
+    width: 380px;
+    border-radius: 18px;
+}
+.gameImg, .gameImg2{
+    position: absolute;
+    width: 170px;
+    height: 170px;
+    transition: 0.3s;
+}
+.gameImg{
+    opacity: 1;
+}
+.gameImg2{
+    opacity: 0;
+}
+.contentBox:hover .gameImg{
+    opacity: 0;
+}
+.contentBox:hover .gameImg2{
+    opacity: 1;
+}
+
+.travelImg, .travelImg2{
+    position: absolute;
+    width: 170px;
+    height: 170px;
+    transition: 0.3s;
+}
+.travelImg{
+    opacity: 1;
+}
+.travelImg2{
+    opacity: 0;
+}
+.contentBox2:hover .travelImg{
+    opacity: 0;
+}
+.contentBox2:hover .travelImg2{
+    opacity: 1;
+}
+/* 각 컨텐츠 박스 */
+.hobbyLeftBox{
+    background-color: #444444;
+    box-shadow: 0px 0px 9px #444444;
+    border-radius: 18px;
+    height: 240px;
+    width: 380px;
+}
+.hobbyRightBox{
+    background-color: #444444;
+    box-shadow: 0px 0px 9px #444444;
+    border-radius: 18px;
+    height: 240px;
+    width: 380px;
+}
+.hobbyBottom{ /* 게임하기, 해외여행 가기 */
+    display: flex;
+    gap: 350px;
+}
+.bottomTitle{
+    color: #444444;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 15px 0 0 140px;
+}
+.bottomTitle2{
+    color: #444444;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 15px 0 0 0;
+}
